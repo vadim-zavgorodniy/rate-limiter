@@ -1,12 +1,9 @@
-package ru.warmouse.limiter;
+package ru.warmouse.limiter.common;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
-import ru.warmouse.limiter.common.LimitUnit;
-import ru.warmouse.limiter.common.RateLimit;
-import ru.warmouse.limiter.common.RateLimiter;
 
 class RateLimiterTest {
     @Test

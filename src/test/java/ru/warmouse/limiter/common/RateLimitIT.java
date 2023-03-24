@@ -1,13 +1,10 @@
-package ru.warmouse.limiter;
+package ru.warmouse.limiter.common;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.SpyBean;
-import ru.warmouse.limiter.common.LimitUnit;
-import ru.warmouse.limiter.common.RateLimit;
-import ru.warmouse.limiter.common.RateLimiter;
 import ru.warmouse.limiter.service.RateLimiterService;
 
 @SpringBootTest
