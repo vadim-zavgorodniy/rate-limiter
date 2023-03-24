@@ -1,0 +1,14 @@
+rate-limiter:
+  limits:
+    test1:
+      count: 10
+      unit: SECONDS
+    test2:
+      count: 100
+      unit: SECONDS
+    test3:
+      count: 1000
+      unit: HOURS
+
+server:
+  port: 8080
