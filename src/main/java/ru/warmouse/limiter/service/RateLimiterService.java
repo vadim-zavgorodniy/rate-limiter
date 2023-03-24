@@ -27,7 +27,6 @@ public class RateLimiterService {
 
     private void initServiceLimits(Map<String, RateLimit> limits) {
         for (Map.Entry<String, RateLimit> limit : limits.entrySet()) {
-            // LimitViolationReporter violationReporter = new LimitViolationReporter(limit.getKey());
             limiters.put(limit.getKey(), new RateLimiter(limit.getValue(), getViolationReporter(limit.getKey())));
             log.info(String.format("Registered rate limiter: %s with limit %d per %s",
                     limit.getKey(), limit.getValue().getCount(), limit.getValue().getUnit()));
