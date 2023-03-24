@@ -19,8 +19,6 @@ public class RateLimitIT {
 
     @Test
     void canProcess_rateExceeded() throws InterruptedException {
-        //RateLimiter limiter = new RateLimiter(new RateLimit(10, LimitUnit.SECONDS));
-
         for (int i = 0; i < 20; ++i) {
             boolean result = rateLimiterService.canProcess(TEST1_LIMITER_NAME);
             if (i < 10) {

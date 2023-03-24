@@ -14,11 +14,4 @@ import ru.warmouse.limiter.common.RateLimit;
 @ConfigurationProperties(prefix = "rate-limiter")
 public class RateLimitConfiguration {
     private Map<String, RateLimit> limits = new HashMap<>();
-
-    // @PostConstruct
-    // public void init() {
-    //     limits.put("test1", new RateLimit(10, TimeUnit.SECONDS));
-    //     limits.put("test2", new RateLimit(100, TimeUnit.SECONDS));
-    // }
-
 }
