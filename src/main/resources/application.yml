@@ -9,6 +9,9 @@ rate-limiter:
     test3:
       count: 1000
       unit: HOURS
+    load-test:
+      count: 30000
+      unit: SECONDS
 
 server:
   port: 8080
